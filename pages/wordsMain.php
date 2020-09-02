@@ -12,7 +12,7 @@
         <span class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="100" height="100"></span>
         Hongbin's Playground
       </h1>
-      <p>언어가 사람을 만든다</p>
+      <p>Words Make the Person</p>
     </header>
     <nav>
       <?php include("../php/nav.php");
@@ -21,13 +21,13 @@
     <main>
       <ul>
         <li>
-          <button onclick="toggleButton('subButton_ul1')">인문학 단어</button>
+          <button onclick="toggleButton('subButton_ul1')">Humanities Words</button>
           <ul id="subButton_ul1">
             <li>
-              <a href="../pages/cards.php"><button>회계</button></a>
+              <a href="../pages/cards.php"><button>Accounting</button></a>
             </li>
             <li>
-              <button>증권</button>
+              <button>Securities</button>
             </li>
           </ul>
         </li>

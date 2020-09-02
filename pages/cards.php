@@ -27,8 +27,8 @@
           단어
         </div>
         <div id="card_back">
-          <div id="word_def">뜻</div>
-          <div id="word_exp">설명</div>
+          <div id="word_def">Meaning</div>
+          <div id="word_exp">Explanation</div>
         </div>
       </div>
       <span id="rightBtnWrapper" onclick="nextCard()">
