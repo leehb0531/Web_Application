@@ -173,6 +173,33 @@ footer a:link{
 .pInfo-ans{
   padding-left: 5px;
 }
+#mainpic{
+  margin:0 auto;
+  text-align: center;
+  transform: translateY(2px);
+}
+#object {
+  background-color: white;
+  border-radius: 4px;
+}
+#object blockquote{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #d4bea4;
+  border-radius: 4px;
+}
+#links{
+  background-color: #ff6760;
+  border-radius: 6px;
+}
+#links ul{
+  margin-bottom: 0;
+}
+.linkIvisit{
+  text-decoration: none;
+}
 /*common pics*/
 .pPics {
   text-align: right;
