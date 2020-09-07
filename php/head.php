@@ -6,3 +6,4 @@
 <title>Hongbin's Playground</title>
 <script defer src="https://kit.fontawesome.com/6a3c487225.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../css/index.css">
+<link rel="shortcut icon" href="#">

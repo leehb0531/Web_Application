@@ -75,14 +75,14 @@ footer a:link{
 }
 #pInfo-Box{
   background-color: #ffa0a2;
-  display: grid;
-  grid-template-columns: 30% 70%;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px #888888;
+  text-align: center;
 }
+
 #pInfo{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
 }
 #pInfo ul > div:nth-child(odd){
   background-color: blue;
@@ -171,6 +171,7 @@ footer a:link{
   text-align: right;
 }
 .pInfo-ans{
+  text-align: left;
   padding-left: 5px;
 }
 #mainpic{
@@ -189,6 +190,7 @@ footer a:link{
   padding-right: 4px;
   background-color: #d4bea4;
   border-radius: 4px;
+  text-align: center;
 }
 #links{
   background-color: #ff6760;
@@ -204,6 +206,7 @@ footer a:link{
 .pPics {
   text-align: right;
   width: fit-content;
+  height: 73px;
   float:left;
 }
 i.fab{

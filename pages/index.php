@@ -5,21 +5,36 @@
     </head>
     <body>
         <div id="wrapper">
-            <header>
-                <h1>Hongbin's Playground</h1>
-            </header>
-            <nav>
-                <?php include("../php/nav.php");
-                visiting("MAIN"); # make visiting link unclickable ?>
-            </nav>
+            <div id="picContainer">    
+                <div class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="73" height="73"></div> <!-- 여기는 my 사진 -->
+                <header>
+                    <h1>Hongbin's Playground</h1>
+                </header>
+                <nav>
+                    <?php include("../php/nav.php");
+                    visiting("MAIN"); # make visiting link unclickable ?>
+                </nav>
+            </div>
             <main>
                 <p id="mainpic"><img src="../pngfiles/mainpic.jpg" alt="avatar"></p>
                 <div id="pInfo-Box">
-                    <div class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="100" height="100"></div> <!-- 여기는 my 사진 -->
                     <div id="pInfo">
                         <div class="pInfo-category">Name:</div> <div class="pInfo-ans">Redbin Lee</div>
                         <div class="pInfo-category">Gender:</div> <div class="pInfo-ans">Male</div>
                         <div class="pInfo-category">DoB:</div> <div class="pInfo-ans">31st of May, 1994</div>
+                        <div class="pInfo-category">Age:</div>
+                        <?php
+                            $birthYear = $_GET['birthYear'];
+                            if ($birthYear == 1994){ ?>
+                                <div class="pInfo-ans">I am the same age as you</div>
+                            <?php } elseif($birthYear > 1994){ ?>
+                                <div class="pInfo-ans">You are younger than me</div>
+                            <?php } elseif($birthYear < 1994 && $birthYear > 0){ ?>
+                                <div class="pInfo-ans">You are older than me</div>
+                            <?php } elseif(is_null($birthYear)){ ?>
+                                <div class="pInfo-ans">Please type the value of your birthYear to the query string</div>
+                            <?php }
+                        ?>
                         <div class="pInfo-category">Marital Status:</div> <div class="pInfo-ans">Married</div>
                         <div class="pInfo-category">Native:</div> <div class="pInfo-ans">Korean</div>                    
                     </div>
