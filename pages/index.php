@@ -6,7 +6,7 @@
     <body>
         <div id="wrapper">
             <div id="picContainer">    
-                <div class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="73" height="73"></div> <!-- 여기는 my 사진 -->
+                <div class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="73" height="73"></div> <!-- my pics area -->
                 <header>
                     <h1>Hongbin's Playground</h1>
                 </header>

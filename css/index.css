@@ -12,13 +12,14 @@ body{
   margin: auto;
 }
 header {
-  background-color: #ff6760;
+  background-color: #20639b;
   text-align: center;
   border-radius: 5px 5px 0 0;
   box-shadow: 3px 3px 3px #888888;
 }
-header p {
+header h1 {
   margin: 0;
+  color: white;
 }
 h1{
   margin:0;
@@ -30,7 +31,7 @@ nav{
   color: white;
   font-size: 16px;
   text-align: center;
-  background-color: #9ea30d;
+  background-color: #3caea3;
   border-radius: 5px 5px 0 0;
   box-shadow: 3px 3px 3px #888888;
 }
@@ -63,7 +64,7 @@ main {
 }
 footer {
   display: grid;
-  background-color:#d4bea4;
+  background-color:#f6d55c;
   grid-template-columns: 50% 50%;
   text-align: right;
   border-radius: 0 0 5px 5px;
@@ -74,7 +75,7 @@ footer a:link{
   text-decoration: none;
 }
 #pInfo-Box{
-  background-color: #ffa0a2;
+  background-color: #3caea3;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px #888888;
   text-align: center;
@@ -84,11 +85,12 @@ footer a:link{
   display: grid;
   grid-template-columns: 50% 50%;
 }
+/*
 #pInfo ul > div:nth-child(odd){
   background-color: blue;
-}
+}*/
 #lifeEvent-Box {
-  background-color: #d4bea4;
+  background-color: #ed553b;
   position: relative;
   max-width: 1200px;
   margin: 10px auto;
@@ -193,7 +195,7 @@ footer a:link{
   text-align: center;
 }
 #links{
-  background-color: #ff6760;
+  background-color: #3caea3;
   border-radius: 6px;
 }
 #links ul{
