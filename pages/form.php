@@ -5,13 +5,7 @@
     return $db;
   }
   $db = connectDB();
-  $sql = "INSERT INTO users (name,email,comment) VALUES ('".$_POST['name']."',";
-  $sql .= "'".$_POST['email']."',";
-  $sql .= "'".$_POST['message']."');";
-  $result = mysqli_query($db, $sql);
-  if(!$result){
-    print("Error description: " . mysqli_error($db));
-  }
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,18 +36,32 @@
       if(!$valid_post){
         $name = $_POST["name"];
         $email = $_POST["email"];
-      } ?> 
-    <?php } else{
+      }  
+      if($valid_post){
+        $sql = "INSERT INTO users (name,email,password,comment) VALUES ('".$_POST['name']."',";
+        $sql .= "'".$_POST['email']."',";
+        $sql .= "'".sha1($_POST['password'])."',";
+        $sql .= "'".$_POST['message']."');";
+        $result = mysqli_query($db, $sql);
+        if(!$result){
+          print("Error description: " . mysqli_error($db));
+        }
+      }
+      if($_POST["password"]!=$_POST["confirm_password"]){
+        $valid_post=false;
+        $errormsg = "Please make sure those passwords";
+      }
+    } else{
       $valid_post = false;
-    
-     } ?>
-
-    <?php if($valid_post==false){ ?>
+    } 
+    if($valid_post==false){ ?>
       <h1>Q&A</h1>
       <h1>Please fill out the Form</h1>
       <form action="form.php" method="POST">
       Name: <input type='text' name="name" value="<?php echo $name ?>" required><br/>
       Your Email: <input type='email' name='email' value="<?php echo $email ?>" required><br/>
+      Password: <input type='password' name='password' required><br/>
+      Confirm Password: <input type='confirm_password' name='confirm_password' required><br/>
       <div> Message:</div>
       <textarea name="message" rows="10" cols="100" required></textarea><br/>
       <input type="submit" value="Send">
