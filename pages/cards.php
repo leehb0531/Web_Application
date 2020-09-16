@@ -13,7 +13,8 @@
     </h1>
   </header>
   <nav>
-  <?php include("../php/nav.php"); ?>
+  <?php include("../php/nav.php");
+  visiting("CARD");?>
   </nav>
   <main>
     <div id="cardWrapper">

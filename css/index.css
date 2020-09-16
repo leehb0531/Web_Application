@@ -48,15 +48,12 @@ a{
   text-decoration: none;
 }
 .navLink:hover{
-  color:#9ea30d;
-  background-color: #f0e2e0;
+  color:#a33d0d;
   font-weight: 700;
 }
 #visiting{
   pointer-events: none;
-}
-#visiting .navLink{
-  color: #cacaca;
+  text-decoration: underline overline;
 }
 main {
   font-size: 16px;
