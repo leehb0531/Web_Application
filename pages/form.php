@@ -18,11 +18,17 @@
 <head>
   <?php include('../php/head.php');?>
 </head>
-<nav>
-  <?php include('../php/nav.php');
-  visiting("CONTACT");?>
-</nav>
 <body>
+  <header>
+      <h1>
+        <span class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="30" height="30"></span>
+        Hongbin's Playground
+      </h1>
+    </header>
+  <nav>
+    <?php include('../php/nav.php');
+    visiting("CONTACT");?>
+  </nav>
   <?php
     $valid_post = true;
     $name = $_POST["name"];
