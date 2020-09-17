@@ -13,10 +13,10 @@
       <button onclick="toggleButton('subButton_ul1')">Humanities Words</button>
       <ul id="subButton_ul1">
         <li>
-          <a href="cards.php"><button>Accounting</button></a>
+        <button onclick="window.location.href='cards.php'">Accounting</button>
         </li>
         <li>
-        <a href="../php/comming_soon.php"><button>Securities</button></a>
+        <button onclick="window.location.href='../php/comming_soon.php'">Securities</button>
         </li>
       </ul>
     </li>
@@ -24,10 +24,10 @@
       <button onclick="toggleButton('subButton_ul2')">Programming Lanugage Syntax</button>
       <ul id="subButton_ul2">
         <li>
-        <a href="../php/comming_soon.php"><button>Python</button></a>
+        <button onclick="window.location.href='../php/comming_soon.php'">Python</button>
         </li>
         <li>
-        <a href="../php/comming_soon.php"><button>Javascript</button></a>
+        <button onclick="window.location.href='../php/comming_soon.php'">Javascript</button>
         </li>
       </ul>
     </li>

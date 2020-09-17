@@ -60,11 +60,12 @@
         <textarea name="message" rows="10" cols="100" required></textarea><br/>
         <input type="submit" value="Send">
         </form>
-        <h2><?php echo $errormsg; ?></h2>
-        <?php } else{ ?>
+        <?php if($errormsg){print("<h2>".$errormsg."</h2>"); }?>
+        <?php } 
+      else{ ?>
         <h1>!!!Complete!!!</h1>
         <h2> <?php echo $_POST["name"],','; ?> </h2>
         <h2>Thank you for sending me a message</h2>
-      </main>
     <?php } ?>
+      </main>
 <?php  include('../php/footer.php'); ?>
