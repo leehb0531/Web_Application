@@ -1,4 +1,4 @@
-<footer>
+            <footer>
                 <div id="copyright"><span>&copy; Redbin Lee</span></div>
                 <div>
                     <span class = "footer_logo"><a href="https://www.facebook.com/profile.php?id=100008562494600"><i class="fab fa-facebook-square fa-2x"></i></a><!-- sns logo 삽입 -->

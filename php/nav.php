@@ -1,37 +1,31 @@
 <?php
 function visiting($page) { ?>
   <p>Pages</p>
+  <div class="navLink">
   <?php if($page =="MAIN"){ ?>
-    <a href="index.php"><div id="visiting" class="navLink">MAIN</div></a>
-    <a href="wordsMain.php"><div class="navLink">WORDS</div></a>
-    <a href="form.php"><div class="navLink">SIGNUP&CONTACT</div></a>
-    <div class="subnav">
-      <a href="../pages/userlist.php"></a>
-      <a href="../pages/userprofile.php"></a>
+    <div id="visiting" class="subnav"><a href="index.php">MAIN</a></div>
+    <div class="subnav"><a href="wordsMain.php">WORDS</a></div>
+    <div class="subnav"><a href="form.php">SIGNUP&CONTACT</a>
+      <div class="sub_content"><a href="../pages/userlist.php">Userlist</a></div>
     </div>
   <?php } elseif ($page =="WORDS"){ ?>
-    <a href="index.php"><div class="navLink">MAIN</div></a>
-    <a href="wordsMain.php"><div id="visiting" class="navLink">WORDS</div></a>
-    <a href="form.php"><div class="navLink">SIGNUP&CONTACT</div></a>
-    <div class="subnav">
-      <a href="../pages/userlist.php"></a>
-      <a href="../pages/userprofile.php"></a>
+    <div class="subnav"><a href="index.php">MAIN</a></div>
+    <div id="visiting" class="subnav"><a href="wordsMain.php">WORDS</a></div>
+    <div class="subnav"><a href="form.php">SIGNUP&CONTACT</a>
+      <div class="sub_content"><a href="../pages/userlist.php">Userlist</a></div>
     </div>
-  <?php } elseif ($page=="CONTACT"){ ?>
-    <a href="index.php"><div class="navLink">MAIN</div></a>
-    <a href="wordsMain.php"><div class="navLink">WORDS</div></a>
-    <a href="form.php"><div id="visiting" class="navLink">SIGNUP&CONTACT</div></a>
-    <div class="subnav">
-      <a href="../pages/userlist.php"></a>
-      <a href="../pages/userprofile.php"></a>
+  <?php } elseif ($page=="otherDir"){?>
+    <div class="subnav"><a href="../pages/index.php">MAIN</a></div>
+    <div class="subnav"><a href="../pages/wordsMain.php">WORDS</a></div>
+    <div class="subnav"><a href="../pages/form.php">SIGNUP&CONTACT</a>
+      <div class="sub_content"><a href="../pages/userlist.php">Userlist</a></div>
     </div>
-  <?php } else {?>
-    <a href="index.php"><div class="navLink">MAIN</div></a>
-    <a href="wordsMain.php"><div class="navLink">WORDS</div></a>
-    <a href="form.php"><div class="navLink">SIGNUP&CONTACT</div></a>
-    <a href="../pages/userlist.php">Users</a>
-    <div class="subnav">
-      <a href="../pages/userprofile.php">User Profile</a>
+  <?php }  else{?>
+    <div class="subnav"><a href="../pages/index.php">MAIN</a></div>
+    <div class="subnav"><a href="../pages/wordsMain.php">WORDS</a></div>
+    <div class="subnav"><a href="../pages/form.php">SIGNUP&CONTACT</a>
+      <div class="sub_content"><a href="../pages/userlist.php">Userlist</a></div>
     </div>
-  <?php }
-} ?>
+  <?php } ?>
+  </div>
+<?php } ?>

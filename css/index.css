@@ -28,32 +28,57 @@ nav p{
   margin:0;
 }
 nav{
-  color: white;
+  color:white;
   font-size: 16px;
   text-align: center;
   background-color: #3caea3;
   border-radius: 5px 5px 0 0;
   box-shadow: 3px 3px 3px #888888;
 }
-.navLink {
-  display:inline-block;
-  box-shadow: dimgrey;
-  text-decoration: none;
-  color:white;
-}
 a{
+  text-decoration: none;
+  color:#333;
   padding: 3px;
 }
-.navLink:visited {
+.navLink {
+  overflow: hidden;
+}
+.navLink a{
+  color:white;
+  display:inline-block;
   text-decoration: none;
 }
-.navLink:hover{
+.navLink a:hover {
   color:#a33d0d;
   font-weight: 700;
 }
-#visiting{
+.navLink a:visited {
+  text-decoration: none;
+}
+.subnav{
+  display:inline-block;
+}
+.sub_content{
+  display: none;
+  position: absolute;
+  background-color: #3caea3;
+  z-index: 1;
+  color: white;
+}
+.sub_content a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.subnav:hover .sub_content{
+  display:block;
+  color:#a33d0d;
+  font-weight: 700;
+}
+
+#visiting a{
   pointer-events: none;
-  text-decoration: underline overline;
+  text-decoration: underline;
 }
 main {
   font-size: 16px;
@@ -216,4 +241,12 @@ i.fab{
 }
 .footer_logo{
   text-align: right;
+}
+/*table*/
+td{
+  text-align: center;
+  border-bottom: 1px dotted #333;
+}
+th{
+  border-bottom: 2px solid #333;
 }

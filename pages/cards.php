@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <?php include("../php/head.php");?>
   <link rel="stylesheet" href="../css/wordsMain.css">
   <script async src="../js/cards.js"></script>
-</head>
-<body>
-  <header>
-    <h1>
-      <span class="pPics"><img src="../pngfiles/redbin.png" alt="Redbin-pic" width="30" height="30"></span>
-      Hongbin's Playground
-    </h1>
-  </header>
-  <nav>
-  <?php include("../php/nav.php");
-  visiting("CARD");?>
-  </nav>
+  <?php include("../php/header.php");?>
+    <nav>
+    <?php include("../php/nav.php");
+    visiting("CARDS");?>
+    </nav>
+  </div>
   <main>
     <div id="cardWrapper">
       <span id="leftBtnWrapper" onclick="preCard()">
